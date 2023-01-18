@@ -70,7 +70,7 @@ int	main(void)
 	printf("This is the unsigned decimal output: %u\n", '2');
 	printf("This is the lower case hexa output: %x\n", f);
 	printf("This is the upper case hexa output: %X\n", f);
-	printf("This is the pointer output: %p\n", p);
+	printf("This is the pointer output: %p\n", &p);
 	printf("This is the character output: %c\n", 'f');
 	printf("This is the percentage output: %%\n\n");
 
@@ -82,7 +82,7 @@ int	main(void)
 	ft_printf("This is the unsigned decimal output: %u\n", '2');
 	ft_printf("This is the lower case hexa output: %x\n", f);
 	ft_printf("This is the upper case hexa output: %X\n", f);
-	ft_printf("This is the pointer output: %p\n", p);
+	ft_printf("This is the pointer output: %p\n", &p);
 	ft_printf("This is the character output: %c\n", 'f');
 	ft_printf("This is the percentage output: %%\n\n");
 }
