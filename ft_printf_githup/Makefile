@@ -22,14 +22,11 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 
-$(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@echo "$(NAME) created"
-	@ranlib $(NAME)
-	@echo "$(NAME) indexed"
+$(NAME):	$(OBJS)
+			@ar -rcs $(NAME) $(OBJS)
 
-%.o: %.c
-	@gcc $(FLAG) -c $< -o $@
+# %.o: %.c
+# 	@gcc $(FLAG) -c $< -o $@
 
 clean:
 	@rm -f $(OBJ)
