@@ -25,8 +25,6 @@ all: $(NAME)
 $(NAME):	$(OBJS)
 			@ar -rcs $(NAME) $(OBJS)
 
-# %.o: %.c
-# 	@gcc $(FLAG) -c $< -o $@
 
 clean:
 	@rm -f $(OBJ)
